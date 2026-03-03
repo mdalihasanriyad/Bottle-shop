@@ -41,7 +41,7 @@ const Bottles = ({ bottlePromise }) => {
     <div className="max-w-7xl mx-auto space-y-6">
       <h1>Bottles : {bottles.length}</h1>
       <p>Cart Items: {cart.length}</p>
-      <Cart cart={cart}>IMAGE:</Cart>
+      <Cart cart={cart} handleRemoveFromCart={handleRemoveFromCart}></Cart>
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-10 gap-5 justify-center items-center ">
         {bottles.map((bottle) => (
           <Bottle
