@@ -22,7 +22,6 @@ const Bottles = ({ bottlePromise }) => {
 
         console.log('stored cart', storedCart);
         setCart(storedCart);
-        // 8 no video
 
     }, [bottles])
 
